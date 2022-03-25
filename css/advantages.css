@@ -68,9 +68,10 @@
 
 .advantages__item {
   width: 196px;
-  height: 195px;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
 }
@@ -96,6 +97,10 @@
   line-height: 28px;
 }
 
+.advantages__list-slider {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .advantages__title {
     font-size: 32px;
@@ -110,11 +115,6 @@
   .advantages__text-desc {
     font-size: 16px;
     line-height: 23px;
-  }
-
-  .advantages__item {
-    width: 180px;
-    height: 182px;
   }
 
   .advantages__item-text {
@@ -149,9 +149,73 @@
     line-height: 17px;
   }
 
+  .advantages__list {
+    width: 175px;
+    height: 182px;
+    position: relative;
+  }
+
   .advantages__item {
     width: 180px;
-    height: 182px;
+    height: 100%;
+    position: absolute;
+    gap: 26px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .advantages__item-arrow {
+    background-image: url("../img/donee-modified.png");
+    background-size: contain;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+  }
+
+  .arrow-prev {
+    left: -50px;
+    position: absolute;
+    top: 45%;
+    transform: rotate(180deg);
+  }
+
+  .arrow-next {
+    right: -50px;
+    position: absolute;
+    top: 45%;
+  }
+
+  .advantages__item-arrow:hover {
+    background-image: url("../img/arrow-white-modified.png");
+    transform: rotate(180deg);
+  }
+
+  .arrow-prev:hover {
+    transform: rotate(0deg);
+  }
+
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+
+  *:target ~ .item-1 {
+    opacity: 0;
+  }
+
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+  #item-2:target ~ .item-2,
+  #item-3:target ~ .item-3,
+  #item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
   }
 
   .advantages__item-text {
