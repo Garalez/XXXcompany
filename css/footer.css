@@ -21,13 +21,13 @@
 }
 
 .footer__title,
-.footer__img-wrapper_desc {
+.footer__img-wrapper-desc {
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
 }
 
-.footer__subtitle {
+.subtitle-wrapper {
   display: none;
 }
 
@@ -41,7 +41,7 @@
     line-height: 17px;
   }
 
-  .footer__img-wrapper_desc {
+  .footer__img-wrapper-desc {
     font-size: 12px;
     line-height: 17px;
   }
@@ -56,23 +56,23 @@
     display: none;
   }
 
-  .footer__subtitle {
+  .subtitle-wrapper {
     display: initial;
   }
 
-  .footer__subtitle {
+  .subtitle-wrapper__text {
     font-size: 12px;
     line-height: 17px;
   }
 
-  .footer__subtitle-wrapper {
+  .subtitle-wrapper__text {
     padding: 15px 0;
     background: var(--dark-grey);
     background-size: cover;
     text-align: center;
   }
 
-  .footer__img-wrapper_desc {
+  .footer__img-wrapper-desc {
     min-width: 85px;
     font-size: 8px;
     line-height: 11px;

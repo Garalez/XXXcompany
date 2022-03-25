@@ -16,10 +16,10 @@
     <article class="home container">
       <h1 class="home__title visually-hidden">XXXcompany</h1>
       <div class="home__header">
-        <img class="home__header-logo" src="./img/Logo.png" alt="Логотип сайта">
-        <div class="home__header-desc">
-          <p class="home__header-phone">+7 (962) 556 - 1234</p>
-          <p class="home__header-text">Перезвоните мне</p>
+        <img class="home__header-logo logo" src="./img/Logo.png" alt="Логотип сайта">
+        <div class="home__header-desc callback">
+          <p class="home__header-phone callback-phone">+7 (962) 556 - 1234</p>
+          <p class="home__header-text callback-text">Перезвоните мне</p>
         </div>
       </div>
 
@@ -45,10 +45,10 @@
       </div>
 
       <ul class="advantages__list">
-        <span class="advantages__list-slider" id="item-1"></span>
-        <span class="advantages__list-slider" id="item-2"></span>
-        <span class="advantages__list-slider" id="item-3"></span>
-        <span class="advantages__list-slider" id="item-4"></span>
+        <li class="advantages__list-slider" id="item-1"></li>
+        <li class="advantages__list-slider" id="item-2"></li>
+        <li class="advantages__list-slider" id="item-3"></li>
+        <li class="advantages__list-slider" id="item-4"></li>
         <li class="advantages__item item-1" id="#item-1">
           <p class="advantages__item-digit">1</p>
           <p class="advantages__item-text">Первое целевое преимущество</p>
@@ -82,11 +82,10 @@
       <fieldset class="contacts__fieldset">
         <ul class="contacts__fieldset-list">
           <li class="contacts__fieldset-item">
-            <input class="contacts__fieldset-input input-name" type="text" placeholder="Имя">
-            <input class="contacts__fieldset-input input-name_small-screen" type="text" placeholder="Ваше имя">
+            <input class="contacts__fieldset-input input-name" type="text" placeholder="Ваше имя">
           </li>
           <li class="contacts__fieldset-item">
-            <input class="contacts__fieldset-input input-phone" type="phone" placeholder="Телефон">
+            <input class="contacts__fieldset-input input-phone" type="tel" placeholder="Телефон">
           </li>
           <li class="contacts__fieldset-item">
             <input class="contacts__fieldset-input input-email" type="email" placeholder="E-mail">
@@ -102,19 +101,19 @@
     <article class="footer container">
       <h2 class="footer__title">Сделано в Ивановым Иваном</h2>
       <div class="footer__img-wrapper">
-        <img class="home__header-logo" src="./img/Logo.png" alt="Логотип сайта">
-        <div class="footer__img-wrapper_desc">
-          <p class="footer__img-wrapper_text">© 2022 XXXcompany.</p> 
-          <p class="footer__img-wrapper_text">Все права защищены.</p>
+        <img class="footer__img-pic logo" src="./img/Logo.png" alt="Логотип сайта">
+        <div class="footer__img-wrapper-desc">
+          <p class="footer__img-wrapper-text">© 2022 XXXcompany.</p> 
+          <p class="footer__img-wrapper-text">Все права защищены.</p>
         </div>
       </div>
-      <div class="footer__text home__header-desc">
-        <p class="footer__text-phone home__header-phone">+7 (962) 556 - 1234</p>
-        <p class="footer__text-desc home__header-text">Перезвоните мне</p>
+      <div class="footer__text callback">
+        <p class="footer__text-phone callback-phone">+7 (962) 556 - 1234</p>
+        <p class="footer__text-desc callback-text">Перезвоните мне</p>
       </div>
     </article>
-    <div class="footer__subtitle-wrapper container">
-      <p class="footer__subtitle">Сделано в Ивановым Иваном</p>
+    <div class="subtitle-wrapper container">
+      <p class="subtitle-wrapper__text">Сделано в Ивановым Иваном</p>
     </div>
   </footer>
 </body>

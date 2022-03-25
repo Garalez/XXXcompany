@@ -13,19 +13,20 @@
   margin-bottom: 120px;
 }
 
-.home__header-desc {
+.callback {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4px;
 }
 
-.home__header-phone {
+.callback-phone {
   color: var(--white-);
   font-size: 23.85px;
   line-height: 28px;
 }
-.home__header-text {
+
+.callback-text {
   position: relative;
   color: var(--white-);
   font-size: 16px;
@@ -33,7 +34,7 @@
   text-align: center;
 }
 
-.home__header-text::after {
+.callback-text::after {
   position: absolute;
   content: "";
   top: 21px;
@@ -53,6 +54,7 @@
 
 .home__content-title {
   text-align: center;
+  padding: 0 5%;
   color: rgba(255, 255, 255, 0.86);
   -webkit-text-stroke: 1px #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -94,22 +96,26 @@
     margin-bottom: 70px;
   }
 
-  .home__header-logo {
+  .home__content-text {
+    margin-bottom: 25px;
+  }
+
+  .logo {
     width: 60px;
     height: 60px;
   }
 
-  .home__header-text {
+  .callback-text {
     font-size: 13px;
     line-height: 15px;
   }
 
-  .home__header-phone {
+  .callback-phone {
     font-size: 21px;
     line-height: 25px;
   }
 
-  .home__header-text::after {
+  .callback-text::after {
     width: 107px;
   }
 
@@ -141,7 +147,7 @@
     background-image: url("../img/home-background320.jpg");
   }
 
-  .home__header-logo {
+  .logo {
     width: 30px;
     height: 30px;
   }
@@ -150,14 +156,14 @@
     margin-bottom: 68px;
   }
 
-  .home__header-desc {
+  .callback {
     background-image: url("../img/home-phone.png");
     background-repeat: no-repeat;
     background-position: right top;
   }
 
-  .home__header-phone,
-  .home__header-text {
+  .callback-phone,
+  .callback-text {
     visibility: hidden;
   }
 
